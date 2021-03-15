@@ -4,11 +4,14 @@
 >>                                   <<
 ---------------------------------------
 
-Java Flight Recorder (JFR) is a monitoring tool that collects information about the events 
-in a particular instant of time in a Java Virtual Machine during the execution of an application.
-Since Java 11, JFR is free and open source.
+Although the Jeyzer Recorder is the recommended way to go, you may use JFR as a replacement solution,
+especially if the DevOps are not ready to deploy the Jeyzer Recorder agent in a production environment.
 
-A JFR recording is usually analyzed with Java Mission Control. 
+Java Flight Recorder (JFR) is a JVM feature that collects information about the events 
+in a particular instant of time during the execution of an application.
+Since Java 11, the JFR functionality is free.
+
+A JFR recording is usually analyzed with Java Mission Control (JMC).
 Jeyzer can also achieve the same to generate a JZR report.
 Jeyzer analysis advantages are :
 - Active focus on the threads of interest
