@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.jeyzer</groupId>
 	<artifactId>jeyzer-jfr</artifactId>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 	<version>2.4-SNAPSHOT</version>
 	<name>Jeyzer JFR</name>
 	<url>https://github.com/jeyzer-community/jeyzer-recorder</url>

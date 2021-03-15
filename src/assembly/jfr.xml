@@ -11,6 +11,14 @@
 			<filtered>false</filtered>
 			<includes>
 				<include>*.jfc</include>
+			</includes>
+			<fileMode>774</fileMode>
+			<outputDirectory></outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/doc</directory>
+			<filtered>false</filtered>
+			<includes>
 				<include>*.txt</include>
 			</includes>
 			<fileMode>774</fileMode>
