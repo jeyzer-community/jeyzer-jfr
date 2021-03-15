@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.jeyzer</groupId>
+	<artifactId>jeyzer-jfr</artifactId>
+	<packaging>jar</packaging>
+	<version>2.4-SNAPSHOT</version>
+	<name>Jeyzer JFR</name>
+	<url>https://github.com/jeyzer-community/jeyzer-recorder</url>
+	<description>The optimal JFR configuration for Jeyzer. Documentation available at https://jeyzer.org/docs/jzr-recording/</description>
+	
+	<dependencies>
+	</dependencies>
+	
+	<properties>
+	</properties>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.4</version>
+				<executions>
+					<execution>
+						<id>make-zip</id>
+						<configuration>
+							<descriptors>
+								<descriptor>src/assembly/jfr.xml</descriptor>
+							</descriptors>
+							<attach>false</attach>
+							<outputDirectory>${project.build.directory}/distribution</outputDirectory>
+						</configuration>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<licenses>
+      <license>
+        <name>Mozilla Public License Version 2.0</name>
+        <url>http://mozilla.org/MPL/2.0/</url>
+        <distribution>repo</distribution>
+      </license>
+    </licenses>
+	
+	<developers>
+		<developer>
+			<id>jeyzer-community-admin</id>
+			<name>Jeyzer Community Admin</name>
+			<email>jeyzer-community-admin@jeyzer.org</email>
+			<url>https://jeyzer.org/contribute-and-share/</url>
+			<organization>Jeyzer</organization>
+			<organizationUrl>https://jeyzer.org</organizationUrl>
+			<roles>
+				<role>administrator</role>
+			</roles>
+		</developer>
+	</developers>
+	
+	<organization>
+		<name>Jeyzer SAS</name>
+		<url>https://jeyzer.org</url>
+	</organization>
+	<inceptionYear>2020</inceptionYear>
+	
+	<scm>
+		<url>https://github.com/jeyzer-community/jeyzer-jfr</url>
+		<connection>scm:git:ssh://git@github.com/jeyzer-community/jeyzer-jfr.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/jeyzer-community/jeyzer-jfr.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+		
+</project>
