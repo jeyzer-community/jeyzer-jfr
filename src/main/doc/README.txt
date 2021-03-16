@@ -66,6 +66,61 @@ To update it, edit the jeyzer.jfc file and change this parameter value :
 
 
 --------------------------------
+===       JFR events         ===
+--------------------------------
+
+The following JFR events are captured and analyzed by Jeyzer :
+- jdk.CPUInformation
+- jdk.GarbageCollection
+- jdk.GCConfiguration
+- jdk.GCHeapSummary
+- jdk.G1HeapSummary
+- jdk.InitialEnvironmentVariable
+- jdk.InitialSystemProperty
+- jdk.JVMInformation
+- jdk.ModuleExport
+- jdk.ModuleRequire
+- jdk.OldGarbageCollection
+- jdk.OSInformation
+- jdk.PhysicalMemory
+- jdk.PSHeapSummary
+- jdk.ThreadAllocationStatistics
+- jdk.ThreadCPULoad
+- jdk.ThreadDump
+- jdk.ThreadEnd
+- jdk.YoungGarbageCollection 
+
+
+--------------------------------
+===     JFR limitations      ===
+--------------------------------
+
+At this stage, Jeyzer provides the same level of analysis on both JFR recordings and JZR recordings.
+In the near future, extra JFR data will be handled and analyzed.
+
+Some monitoring data - captured with the Jeyzer Recorder - is not available in JFR :
+- The system properties created by the application. It limits the process card usage in Jeyzer.
+- The list of loaded jar files. It prevents the usage of the process jar versions in Jeyzer : alternative is to use the module versions.
+- The loaded jar file manifest attributes
+- The disk space checks
+- The data capture durations
+- The Jeyzer Publisher events (expected). Those could be replaced by the JFR events on JDK 15+ (not yet supported).
+
+The Jeyzer Monitor cannot process yet the JFR recordings : you must still use the Jeyzer Recorder.
+
+
+--------------------------------
+===       JFR testing        ===
+--------------------------------
+
+The JFR recording generation and analysis has been performed with the following JDK 11 implementations :
+- OpenJDK
+- Oracle JDK
+- Azul Zulu JDK
+- Amazon Correto JDK
+
+
+--------------------------------
 ===    JFR Documentation     ===
 --------------------------------
 
