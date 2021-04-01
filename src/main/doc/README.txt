@@ -35,7 +35,7 @@ Prerequisites : as indicated previously, your application must run under Java 11
 
 - Deploy the jeyzer.jfc file (available in the <Jeyzer home>/jfr) in the target environment.
 - Add the following VM parameter to your Java application command line (replace the <> as indicated) : 
-   --XX:StartFlightRecording=maxage=6h,maxsize=100M,settings=<JFR configuration>,filename=<JFR recording>
+   --XX:StartFlightRecording=maxage=6h,maxsize=100M,dumponexit=true,settings=<JFR configuration>,filename=<JFR recording>
      <JFR configuration> is the path to the jeyzer.jfc file
      <JFR recording> is the path to the resulting JFR recording
 - Start your application. Let it run for some time 
