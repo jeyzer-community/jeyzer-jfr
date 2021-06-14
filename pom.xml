@@ -6,7 +6,7 @@
 	<packaging>pom</packaging>
 	<version>2.5</version>
 	<name>Jeyzer JFR</name>
-	<url>https://github.com/jeyzer-community/jeyzer-recorder</url>
+	<url>https://github.com/jeyzer-community/jeyzer-jfr</url>
 	<description>The optimal JFR configuration for Jeyzer. Documentation available at https://jeyzer.org/docs/jzr-recording/</description>
 	
 	<dependencies>
