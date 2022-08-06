@@ -9,7 +9,8 @@ especially if the DevOps are not ready to deploy the Jeyzer Recorder agent in a 
 
 Java Flight Recorder (JFR) is a JVM feature that collects information about the events 
 in a particular instant of time during the execution of an application.
-Since Java 11, the JFR functionality is free.
+Since Java 11, the JFR new implementation (known as JFR 1.0) is free.
+JFR 1.0 has been back ported on the latest Java 8 OpenJDK.
 
 A JFR recording is usually analyzed with Java Mission Control (JMC).
 Jeyzer can also achieve the same to generate a JZR report.
@@ -24,7 +25,7 @@ Jeyzer analysis advantages are :
 
 (*) Requires to setup Jeyzer applicative profiles
 
-Jeyzer supports JFR recordings made with Java 11+ versions.
+Jeyzer supports JFR recordings made with Java 11+ versions and recent Java 8 OpenJDKs.
 
 
 --------------------------------
@@ -113,7 +114,7 @@ The Jeyzer Monitor cannot process yet the JFR recordings : you must still use th
 ===       JFR testing        ===
 --------------------------------
 
-The JFR recording generation and analysis has been performed with the following JDK 11 implementations :
+The JFR recording generation and analysis has been performed with the following JDK 11 and 17 implementations :
 - OpenJDK
 - Oracle JDK
 - Azul Zulu JDK
