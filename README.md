@@ -27,7 +27,7 @@ Under the current directory, execute :
 License
 -------
 
-Copyright 2020-2021 Jeyzer.
+Copyright 2020-2022 Jeyzer.
 
 Licensed under the [Mozilla Public License, Version 2.0](https://www.mozilla.org/media/MPL/2.0/index.815ca599c9df.txt)
 
