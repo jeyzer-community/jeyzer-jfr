@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration version="2.0" label="Jeyzer" description="JFR recording settings addapted for a Jeyzer analysis" provider="Jeyzer">
+<configuration version="3.0" label="Jeyzer" description="JFR recording settings addapted for a Jeyzer analysis" provider="Jeyzer">
 
   <category label="Java Development Kit">
 
