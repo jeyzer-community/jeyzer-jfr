@@ -65,6 +65,10 @@ The thread dump period is set by default to 30 seconds.
 To update it, edit the jeyzer.jfc file and change this parameter value :
   <setting name="period" label="Period" description="Record event at interval" contentType="jdk.jfr.Period">30 s</setting>
 
+Note that the provided JFC configuration is backward compatible.
+For example, the VirtualThreadStart and VirtualThreadEnd events are ignored in Java 11.
+VirtualThreadStart and VirtualThreadEnd events require Jeyzer 3.1+ to be analyzed.
+
 
 --------------------------------
 ===       JFR events         ===
@@ -90,6 +94,8 @@ The following JFR events are captured and analyzed by Jeyzer :
 - jdk.ThreadDump
 - jdk.ThreadEnd
 - jdk.YoungGarbageCollection 
+- jdk.VirtualThreadStart
+- jdk.VirtualThreadEnd
 
 
 --------------------------------

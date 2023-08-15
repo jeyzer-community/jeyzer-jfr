@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration version="3.0" label="Jeyzer" description="JFR recording settings addapted for a Jeyzer analysis" provider="Jeyzer">
+<configuration version="2.21" label="Jeyzer" description="JFR recording settings addapted for a Jeyzer analysis" provider="Jeyzer">
 
   <category label="Java Development Kit">
 
@@ -7,25 +7,25 @@
 
       <event name="jdk.SecurityPropertyModification" label="Security Property Modification" description="Modification of Security property">
         <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-        <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+        <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
         <setting name="threshold" label="Threshold" description="Record event with duration above or equal to threshold" contentType="jdk.jfr.Timespan">0 ns</setting>
       </event>
 
       <event name="jdk.X509Validation" label="X509 Validation" description="Serial numbers from X.509 Certificates forming chain of trust">
         <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-        <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+        <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
         <setting name="threshold" label="Threshold" description="Record event with duration above or equal to threshold" contentType="jdk.jfr.Timespan">0 ns</setting>
       </event>
 
       <event name="jdk.X509Certificate" label="X509 Certificate" description="Details of X.509 Certificate parsed by JDK">
         <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-        <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+        <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
         <setting name="threshold" label="Threshold" description="Record event with duration above or equal to threshold" contentType="jdk.jfr.Timespan">0 ns</setting>
       </event>
 
       <event name="jdk.TLSHandshake" label="TLS Handshake" description="Parameters used in TLS Handshake">
         <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-        <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+        <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
         <setting name="threshold" label="Threshold" description="Record event with duration above or equal to threshold" contentType="jdk.jfr.Timespan">0 ns</setting>
       </event>
 
@@ -49,7 +49,7 @@
 
         <event name="jdk.AllocationRequiringGC" label="Allocation Requiring GC">
           <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-          <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+          <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
         </event>
 
         <event name="jdk.EvacuationInformation" label="Evacuation Information">
@@ -214,12 +214,12 @@
 
         <event name="jdk.MetaspaceOOM" label="Metaspace Out of Memory">
           <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">true</setting>
-          <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+          <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
         </event>
 
         <event name="jdk.MetaspaceAllocationFailure" label="Metaspace Allocation Failure">
           <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-          <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+          <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
         </event>
 
         <event name="jdk.MetaspaceChunkFreeListSummary" label="Metaspace Chunk Free List Summary">
@@ -418,13 +418,13 @@
 
       <event name="jdk.BiasedLockClassRevocation" label="Biased Lock Class Revocation" description="Revoked biases for all instances of a class">
         <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-        <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+        <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
         <setting name="threshold" label="Threshold" description="Record event with duration above or equal to threshold" contentType="jdk.jfr.Timespan">0 ms</setting>
       </event>
 
       <event name="jdk.ReservedStackActivation" label="Reserved Stack Activation" description="Activation of Reserved Stack Area caused by stack overflow with ReservedStackAccess annotated method in call stack">
         <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-        <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+        <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
       </event>
 
       <event name="jdk.NativeLibrary" label="Native Library">
@@ -439,19 +439,19 @@
 
       <event name="jdk.BiasedLockRevocation" label="Biased Lock Revocation" description="Revoked bias of object">
         <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-        <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+        <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
         <setting name="threshold" label="Threshold" description="Record event with duration above or equal to threshold" contentType="jdk.jfr.Timespan">0 ms</setting>
       </event>
 
       <event name="jdk.BiasedLockSelfRevocation" label="Biased Lock Self Revocation" description="Revoked bias of object biased towards own thread">
         <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-        <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+        <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
         <setting name="threshold" label="Threshold" description="Record event with duration above or equal to threshold" contentType="jdk.jfr.Timespan">0 ms</setting>
       </event>
 
       <event name="jdk.Shutdown" label="JVM Shutdown" description="JVM shutting down">
         <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">true</setting>
-        <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+        <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
       </event>
 
     </category>
@@ -479,13 +479,13 @@
 
       <event name="jdk.ClassLoad" label="Class Load">
         <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-        <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+        <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
         <setting name="threshold" label="Threshold" description="Record event with duration above or equal to threshold" contentType="jdk.jfr.Timespan">0 ms</setting>
       </event>
 
       <event name="jdk.ClassDefine" label="Class Define">
         <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-        <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+        <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
       </event>
 
       <event name="jdk.ClassUnload" label="Class Unload">
@@ -566,13 +566,13 @@
 
     <event name="jdk.JavaMonitorEnter" label="Java Monitor Blocked">
       <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
       <setting name="threshold" label="Threshold" description="Record event with duration above or equal to threshold" contentType="jdk.jfr.Timespan">20 ms</setting>
     </event>
 
     <event name="jdk.JavaExceptionThrow" label="Java Exception" description="An object derived from java.lang.Exception has been created">
       <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
       <setting name="threshold" label="Threshold" description="Record event with duration above or equal to threshold" contentType="jdk.jfr.Timespan">0 ns</setting>
     </event>
 
@@ -607,7 +607,7 @@
 
     <event name="jdk.ThreadPark" label="Java Thread Park">
       <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
       <setting name="threshold" label="Threshold" description="Record event with duration above or equal to threshold" contentType="jdk.jfr.Timespan">20 ms</setting>
     </event>
 
@@ -617,71 +617,95 @@
 
     <event name="jdk.SocketRead" label="Socket Read" description="Reading data from a socket">
       <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
       <setting name="threshold" label="Threshold" description="Record event with duration above or equal to threshold" contentType="jdk.jfr.Timespan">20 ms</setting>
     </event>
 
     <event name="jdk.FileForce" label="File Force" description="Force updates to be written to file">
       <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
       <setting name="threshold" label="Threshold" description="Record event with duration above or equal to threshold" contentType="jdk.jfr.Timespan">20 ms</setting>
     </event>
 
     <event name="jdk.SocketWrite" label="Socket Write" description="Writing data to a socket">
       <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
       <setting name="threshold" label="Threshold" description="Record event with duration above or equal to threshold" contentType="jdk.jfr.Timespan">20 ms</setting>
     </event>
 
     <event name="jdk.JavaErrorThrow" label="Java Error" description="An object derived from java.lang.Error has been created. OutOfMemoryErrors are ignored">
       <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
       <setting name="threshold" label="Threshold" description="Record event with duration above or equal to threshold" contentType="jdk.jfr.Timespan">0 ns</setting>
     </event>
 
     <event name="jdk.JavaMonitorInflate" label="Java Monitor Inflated">
       <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
       <setting name="threshold" label="Threshold" description="Record event with duration above or equal to threshold" contentType="jdk.jfr.Timespan">20 ms</setting>
     </event>
 
     <event name="jdk.ObjectAllocationOutsideTLAB" label="Allocation outside TLAB" description="Allocation outside Thread Local Allocation Buffers">
       <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
     </event>
 
     <event name="jdk.FileWrite" label="File Write" description="Writing data to a file">
       <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
       <setting name="threshold" label="Threshold" description="Record event with duration above or equal to threshold" contentType="jdk.jfr.Timespan">20 ms</setting>
     </event>
 
     <event name="jdk.JavaMonitorWait" label="Java Monitor Wait" description="Waiting on a Java monitor">
       <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
       <setting name="threshold" label="Threshold" description="Record event with duration above or equal to threshold" contentType="jdk.jfr.Timespan">20 ms</setting>
     </event>
 
     <event name="jdk.ObjectAllocationInNewTLAB" label="Allocation in new TLAB" description="Allocation in new Thread Local Allocation Buffer">
       <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
     </event>
 
     <event name="jdk.FileRead" label="File Read" description="Reading data from a file">
       <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
       <setting name="threshold" label="Threshold" description="Record event with duration above or equal to threshold" contentType="jdk.jfr.Timespan">20 ms</setting>
     </event>
 
     <event name="jdk.ThreadSleep" label="Java Thread Sleep">
       <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
-      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">true</setting>
+      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
       <setting name="threshold" label="Threshold" description="Record event with duration above or equal to threshold" contentType="jdk.jfr.Timespan">20 ms</setting>
     </event>
 
     <event name="jdk.ThreadEnd" label="Java Thread End">
       <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">false</setting>
     </event>
+	
+	<!-- Virtual threads - Java 17+ -->
+
+    <event name="jdk.VirtualThreadStart" label="Virtual Thread Start">
+      <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">true</setting>
+      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
+    </event>
+
+    <event name="jdk.VirtualThreadEnd" label="Virtual Thread End">
+      <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">true</setting>
+      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
+    </event>
+
+	<!--
+    <event name="jdk.VirtualThreadSubmitFailed" label="Virtual Thread Submit Failed">
+      <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">true</setting>
+      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
+    </event>
+
+    <event name="jdk.VirtualThreadPinned" label="Virtual Thread Pinned">
+      <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">true</setting>
+      <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
+    </event>
+    -->
 
   </category>
 
