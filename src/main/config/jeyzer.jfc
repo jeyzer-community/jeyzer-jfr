@@ -700,12 +700,12 @@
       <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">true</setting>
       <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
     </event>
+	-->
 
     <event name="jdk.VirtualThreadPinned" label="Virtual Thread Pinned">
       <setting name="enabled" label="Enabled" description="Record event" contentType="jdk.jfr.Flag">true</setting>
       <setting name="stackTrace" label="Stack Trace" description="Record stack traces" contentType="jdk.jfr.Flag">false</setting>
     </event>
-    -->
 
   </category>
 
