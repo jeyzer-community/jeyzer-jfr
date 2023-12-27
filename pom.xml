@@ -4,7 +4,7 @@
 	<groupId>org.jeyzer</groupId>
 	<artifactId>jeyzer-jfr</artifactId>
 	<packaging>pom</packaging>
-	<version>3.3-SNAPSHOT</version>
+	<version>3.2</version>
 	<name>Jeyzer JFR</name>
 	<url>https://github.com/jeyzer-community/jeyzer-jfr</url>
 	<description>The optimal JFR configuration for Jeyzer. Documentation available at https://jeyzer.org/docs/jzr-recording/</description>
