@@ -67,7 +67,7 @@ To update it, edit the jeyzer.jfc file and change this parameter value :
 
 Note that the provided JFC configuration is backward compatible.
 For example, the VirtualThreadStart and VirtualThreadEnd events are ignored in Java 11.
-VirtualThreadStart and VirtualThreadEnd events require Jeyzer 3.1+ to be analyzed.
+Those events require Jeyzer 3.1+ to be analyzed.
 
 
 --------------------------------
@@ -96,6 +96,7 @@ The following JFR events are captured and analyzed by Jeyzer :
 - jdk.YoungGarbageCollection 
 - jdk.VirtualThreadStart
 - jdk.VirtualThreadEnd
+- jdk.VirtualThreadPinned
 
 
 --------------------------------
